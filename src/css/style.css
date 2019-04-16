@@ -18,6 +18,12 @@
 }
 .btn:hover{
   background-color: rgb(139, 0, 0);
+  cursor: pointer;
+}
+.btn:active{
+  background-color: rgb(122, 0, 0);
+  cursor: pointer;
+  border-bottom: 1px solid rgb(41, 0, 0);
 }
 
 .popover{
