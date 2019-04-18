@@ -1,4 +1,4 @@
-import Popoper from '../src/js/class_popoper';
+import Popoper from '../src/js/Popoper';
 
 test('Popoper creating', () => {
   const inputPopoper = new Popoper();
