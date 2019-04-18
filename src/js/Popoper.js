@@ -2,7 +2,7 @@ export default class Popoper {
   constructor() {
     this.type = 'button';
     this.class = 'btn';
-    this.button = 0;
+    this.button = null;
   }
 
   set popoperTitle(title) {
@@ -15,7 +15,7 @@ export default class Popoper {
 
   create() {
     this.holder = document.querySelector('[data-id=holder]');
-    this.button = document.querySelector('#buttonWithPopover');
+    this.button = document.querySelector('[data-id=buttonWithPopover]');
     this.button.setAttribute('data-content', this.data);
 
     this.addListenerButton();
@@ -38,8 +38,7 @@ export default class Popoper {
       popoperEl.style.marginLeft = `${(this.button.offsetWidth - popoperEl.offsetWidth) / 2}px`;
 
       setTimeout(() => {
-        const childToRemove = this.button.parentElement.lastChild;
-        this.button.parentElement.removeChild(childToRemove);
+        this.button.parentElement.removeChild(popoperEl);
       }, 1000);
     });
   }

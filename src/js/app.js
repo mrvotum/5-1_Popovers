@@ -1,4 +1,4 @@
-import Popoper from './class_popoper';
+import Popoper from './Popoper';
 
 const popoper = new Popoper();
 popoper.popoperTitle = 'Popover title';
