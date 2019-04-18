@@ -6,7 +6,7 @@ test('Popoper creating', () => {
   const expected = { // ожидает
     type: 'button',
     class: 'btn',
-    button: 0,
+    button: null,
   };
 
   const received = inputPopoper; // получает
