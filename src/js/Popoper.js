@@ -25,6 +25,7 @@ export default class Popoper {
     this.button.addEventListener('click', () => {
       const popoperEl = document.createElement('div');
       popoperEl.className = 'popover';
+      popoperEl.setAttribute('data-id', 'popover');
 
       popoperEl.innerHTML = `
         <h3 class="popoverTitle">${this.title}</h3>
