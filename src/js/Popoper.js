@@ -15,7 +15,7 @@ export default class Popoper {
 
   create() {
     this.holder = document.querySelector('[data-id=holder]');
-    this.button = document.querySelector('[data-id=buttonWithPopover]');
+    this.button = document.querySelector('[data-id=button-with-popover]');
     this.button.setAttribute('data-content', this.data);
 
     this.addListenerButton();
